@@ -26,14 +26,19 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!--AOS ANIMATION-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--Header-->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        id="navbar"
+      >
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./image/logo.png" height="30px" width="150px"/>
+            <img src="./image/logo.png" height="30px" width="150px" />
           </a>
           <button
             class="navbar-toggler"
@@ -48,42 +53,40 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul
-              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav__list "
-              style="--bs-scroll-height:80vh"
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll nav__list"
+              style="--bs-scroll-height: 80vh"
             >
-            <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>About Us
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-check-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contactme" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact
-              </a>
-            </li>
+              <li class="nav__item">
+                <a href="#home" class="nav__link">
+                  <i class="uil uil-estate nav__icon"></i>Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  <i class="uil uil-user nav__icon"></i>About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">
+                  <i class="uil uil-file-check-alt nav__icon"></i> Skills
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">
+                  <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__link">
+                  <i class="uil uil-scenery nav__icon"></i> Portfolio
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#contactme" class="nav__link">
+                  <i class="uil uil-message nav__icon"></i> Contact
+                </a>
+              </li>
             </ul>
-           
-            </form>
           </div>
         </div>
       </nav>
@@ -93,72 +96,89 @@
     <main class="main">
       <!--Home-->
       <section class="home section" id="home">
-
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-8 col-sm-8 col-lg-6"> 
-        <div class="home__blob">
-          <img src="./image/heroimage2.png" class="d-block mx-lg-auto img-fluid " loading="lazy">
-        </div>           
-        <div class="home__scroll">
-          <a href="#about" class="home__scroll-button button--flex">
-            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-            <span class="home__scroll-name">Scroll down</span>
-            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-6 d-grid  d-md-flex justify-content-md-start">
-        <div class="col-2 m-auto ">
-          <a
-            href="https://www.linkedin.com/in/mithun-k-j-8118b9274/"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="uil uil-linkedin-alt"></i>
-          </a>
-          <!-- <a
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-8 col-sm-8 col-lg-6">
+              <div class="home__blob" data-aos="fade-left" data-aos-delay="50">
+                <img
+                  src="./image/heroimage2.png"
+                  class="d-block mx-lg-auto img-fluid"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="home__scroll"
+                data-aos="fade-left"
+                data-aos-delay="50"
+              >
+                <a href="#about" class="home__scroll-button button--flex">
+                  <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                  <span class="home__scroll-name">Scroll down</span>
+                  <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 d-grid d-md-flex justify-content-md-start">
+              <div class="col-2 m-auto" data-aos="fade-up">
+                <a
+                  href="https://www.linkedin.com/in/mithun-k-j-8118b9274/"
+                  target="_blank"
+                  class="home__social-icon"
+                >
+                  <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <!-- <a
             href="https://dribbble.com"
             target="_blank"
             class="home__social-icon"
           >
             <i class="uil uil-dribbble"></i>
           </a> -->
-          <a
-            href="https://github.com/Mithunkj/"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="uil uil-github"></i>
-          </a>
+                <a
+                  href="https://github.com/Mithunkj/"
+                  target="_blank"
+                  class="home__social-icon"
+                >
+                  <i class="uil uil-github"></i>
+                </a>
+              </div>
+              <div class="col-8">
+                <h1 class="home__title" data-aos="fade-up">Hi, I am Mithun</h1>
+                <h3 class="home__subtitle" data-aos="fade-up">
+                  Fullstack developer
+                </h3>
+                <p class="home__description" data-aos="fade-up">
+                  Heigh level expercice
+                </p>
+                <a
+                  href="#contactme"
+                  class="button button--flex"
+                  data-aos="fade-up"
+                >
+                  Contact me<i class="uil uil-message button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-8 ">
-          <h1 class="home__title">Hi, I am Mithun</h1>
-          <h3 class="home__subtitle">Fullstack developer</h3>
-          <p class="home__description">Heigh level expercice</p>
-          <a href="#contactme" class="button button--flex">
-            Contact me<i class="uil uil-message button__icon"></i>
-          </a>
-        </div>
-      </div>
-     
-    </div>
-  </div>
-</section>
-
+      </section>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </main>
+
     <!--About-->
     <section class="about section" id="about">
-      <h2 class="section__title">About me</h2>
-      <span class="section__subtitle">My introdection</span>
+      <h2 class="section__title" data-aos="fade-up">About me</h2>
+      <span class="section__subtitle" data-aos="fade-up">My introdection</span>
       <div class="about__container container grid">
         <img
           src="./image/about.jpg"
           alt="aboutus"
           class="about__img"
+          data-aos="fade-up"
+          data-aos-delay="150"
         />
-        <div class="about__data">
-          <p class="about__discription">Web devloper</p>
+        <div class="about__data" data-aos="fade-up" data-aos-delay="150">
+          <p class="text-center fw-bold fs-5">Web devloper</p>
 
           <div class="about__info">
             <div>
@@ -177,20 +197,32 @@
             </div>
           </div>
           <div class="about__button">
-            <a href="./image//Mithun_fullstack_developer.pdf" target="_blank" class="button button--flex" download>
+            <a
+              href="./image/MithunKJ_Full_Stack_Developer.pdf"
+              target="_blank"
+              class="button button--flex"
+              download
+            >
               Download CV <i class="uil uil-download-alt button__icon"></i>
             </a>
           </div>
         </div>
       </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </section>
 
     <!----skills---->
     <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <span class="section__subtitle">My technical level</span>
+      <h2 class="section__title" data-aos="fade-up">Skills</h2>
+      <span class="section__subtitle" data-aos="fade-up"
+        >My technical level</span
+      >
 
-      <div class="skills__container container grid">
+      <div
+        class="skills__container container grid"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
         <div>
           <!---========Skills 1=============-->
           <div class="skills__content skills__open">
@@ -346,8 +378,8 @@
               </div>
             </div>
           </div>
-           <!---========Skills 4=============-->
-           <div class="skills__content skills__close">
+          <!---========Skills 4=============-->
+          <div class="skills__content skills__close">
             <div class="skills__header">
               <i class="uil uil-swatchbook skills__icon"></i>
 
@@ -374,23 +406,33 @@
           </div>
         </div>
       </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </section>
 
     <!---Qualifiction-->
     <section class="qualification section">
-      <h2 class="section__title">Qualification</h2>
-      <span class="section__subtitle">My personal journey</span>
+      <h2 class="section__title" data-aos="fade-up">Qualification</h2>
+      <span class="section__subtitle" data-aos="fade-up"
+        >My personal journey</span
+      >
 
       <div class="qualification__container container">
         <div class="qualification__tabs">
           <div
             class="qualification__button button--flex qualification__active"
             data-target="#education"
+            data-aos="fade-right"
+            data-aos-delay="150"
           >
             <i class="uil uil-graduation-cap qualification__icon"></i>
             Education
           </div>
-          <div class="qualification__button button--flex" data-target="#work">
+          <div
+            class="qualification__button button--flex"
+            data-target="#work"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
             <i class="uil uil-briefcase-alt qualification__icon"></i>
             Work
           </div>
@@ -403,11 +445,16 @@
             id="education"
           >
             <!----Qualification 1 ---------->
-            <div class="qualification__data">
+            <div
+              class="qualification__data"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               <div>
                 <h3 class="qualification__title">Civil Enginner</h3>
                 <span class="qualification__subtitle">
-                  Jain Institute Of Technical, Davanagere</span>
+                  Jain Institute Of Technical, Davanagere</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2020
@@ -421,7 +468,11 @@
             </div>
 
             <!----Qualification 2 ---------->
-            <div class="qualification__data">
+            <div
+              class="qualification__data"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
               <div></div>
 
               <div>
@@ -430,7 +481,9 @@
               </div>
               <div class="text-end">
                 <h3 class="qualification__title">PUC</h3>
-                <span class="qualification__subtitle">Nutan PU Collage, Davanagere</span>
+                <span class="qualification__subtitle"
+                  >Nutan PU Collage, Davanagere</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2014
@@ -439,10 +492,16 @@
             </div>
 
             <!----Qualification 3 ---------->
-            <div class="qualification__data">
+            <div
+              class="qualification__data"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
               <div>
                 <h3 class="qualification__title">SSLC</h3>
-                <span class="qualification__subtitle">STJ High School, Davanagere</span>
+                <span class="qualification__subtitle"
+                  >STJ High School, Davanagere</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2012
@@ -453,7 +512,6 @@
                 <!-- <span class="qualification__line"></span> -->
               </div>
             </div>
-
           </div>
 
           <!-----Qualification content 2-------->
@@ -462,7 +520,9 @@
             <div class="qualification__data">
               <div>
                 <h3 class="qualification__title">SoftWareEnginner</h3>
-                <span class="qualification__subtitle">Bubblesort Tech - Bangalore</span>
+                <span class="qualification__subtitle"
+                  >Bubblesort Tech - Bangalore</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2023 - 2024
@@ -485,7 +545,9 @@
               </div>
               <div class="text-end">
                 <h3 class="qualification__title">Frontend Developer</h3>
-                <span class="qualification__subtitle">Bubblesort Tech - Bangalore</span>
+                <span class="qualification__subtitle"
+                  >Bubblesort Tech - Bangalore</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2023-2024
@@ -497,7 +559,9 @@
             <div class="qualification__data">
               <div>
                 <h3 class="qualification__title">Fullstack Developer</h3>
-                <span class="qualification__subtitle">Bubblesort Tech - Bangalore</span>
+                <span class="qualification__subtitle"
+                  >Bubblesort Tech - Bangalore</span
+                >
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i>
                   2023-2024
@@ -512,16 +576,21 @@
           </div>
         </div>
       </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </section>
 
     <!--=======================Services =============================-->
     <section class="services section" id="services">
-      <h2 class="section__title">Services</h2>
-      <span class="section__subtitle">What I offer</span>
+      <h2 class="section__title" data-aos="fade-up">Services</h2>
+      <span class="section__subtitle" data-aos="fade-up">What I offer</span>
 
       <div class="services__container container grid">
         <!--================Services 1=========================-->
-        <div class="services__content">
+        <div
+          class="services__content"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <div>
             <i class="uil uil-web-grid services__icon"></i>
             <h3 class="services__title">
@@ -568,7 +637,7 @@
         </div>
 
         <!--================Services 2=========================-->
-        <div class="services__content">
+        <div class="services__content" data-aos="fade-up" data-aos-delay="300">
           <div>
             <i class="uil uil-arrow services__icon"></i>
             <h3 class="services__title">
@@ -615,7 +684,11 @@
         </div>
 
         <!--================Services 3=========================-->
-        <div class="services__content">
+        <div
+          class="services__content"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <div>
             <i class="uil uil-pen services__icon"></i>
             <h3 class="services__title">
@@ -661,17 +734,20 @@
           </div>
         </div>
       </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </section>
 
     <!--=======================portFolio==============================-->
     <div class="section portfolio section" id="portfolio">
-      <h2 class="section__title">Portfolio</h2>
-      <span class="section__subtitle">Most recent work</span>
+      <h2 class="section__title" data-aos="fade-up">Portfolio</h2>
+      <span class="section__subtitle" data-aos="fade-up">Most recent work</span>
       <div class="portfolio__container container">
         <div
           id="carouselExampleInterval"
           class="carousel slide"
           data-bs-ride="carousel"
+          data-aos="fade-up"
+          data-aos-delay="150"
         >
           <div class="carousel-inner">
             <!--====================Protfolio 1=======================-->
@@ -683,9 +759,10 @@
                   class="portfolio__img"
                 />
                 <div class="portfilo__data">
-                  <h3 class="portfolio__title">STRICX </h3>
-                  <p class="portfolio__decription">Creating Young Innovators
-                    For A Bright Future</p>
+                  <h3 class="portfolio__title">STRICX</h3>
+                  <p class="portfolio__decription">
+                    Creating Young Innovators For A Bright Future
+                  </p>
                   <a
                     href="https://stricx.us/"
                     class="button button-flex button-small portfolio__button"
@@ -706,8 +783,10 @@
                 />
                 <div class="portfilo__data">
                   <h3 class="portfolio__title">The Royal Hubs</h3>
-                  <p class="portfolio__decription">Entertainment and Event Management
-                    Enjoy Private Mini Theatre</p>
+                  <p class="portfolio__decription">
+                    Entertainment and Event Management Enjoy Private Mini
+                    Theatre
+                  </p>
                   <a
                     href="https://www.theroyalhubs.in/"
                     class="button button-flex button-small portfolio__button"
@@ -728,7 +807,9 @@
                 />
                 <div class="portfilo__data">
                   <h3 class="portfolio__title">Sanctum</h3>
-                  <p class="portfolio__decription">One-stop destination for transforming your living spaces</p>
+                  <p class="portfolio__decription">
+                    One-stop destination for transforming your living spaces
+                  </p>
                   <a
                     href="https://www.sanctuminteriorstudio.com/"
                     class="button button-flex button-small portfolio__button"
@@ -760,6 +841,7 @@
           </button>
         </div>
       </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </div>
     <!--=======================Proje in mind===========================-->
     <!-- <section class="project section">
@@ -900,50 +982,87 @@
       </div>
     </section>
 
-
     <!--=======================================Contactme=====================================--->
     <section>
       <div class="container contact__container" id="contactme">
         <div class="contact__form">
-          <h2 class="text-center mb-5">Contact Me</h2>
-      <form>
-        <div class="mb-3 ">
-          <label  class="form-label">Name</label>
-          <input type="text" class="form-control">        
+          <h2 class="text-center mb-5" data-aos="fade-right">Contact Me</h2>
+          <form data-aos="fade-right" data-aos-delay="150">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control mb-3"
+                name="message"
+                rows="3"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div
+              class="mb-3 form-check"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <a
+              href="#"
+              class="button button--flex"
+              data-aos="fade-right"
+              data-aos-delay="150"
+            >
+              GET IN TOCH<i class="uil uil-message button__icon"></i>
+            </a>
+          </form>
         </div>
-        <div class="mb-3">
-          <label  class="form-label">Email address</label>
-          <input type="email" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label  class="form-label">Phone Number</label>
-          <input type="password" class="form-control" >
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <a href="#" class="button button--flex">
-         GET IN TOCH<i class="uil uil-message button__icon"></i>
-        </a>
-      </form>
-    </div>
-    </div>
+      </div>
+      <span class="moveIcon"><img src="./image/logo.png" /></span>
     </section>
     <!--Footer-->
 
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
         <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >&copy; Copyright Mithun. All Rights Reserved</span
+          >
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"> <a
-            href="https://www.linkedin.com/in/mithun-k-j-8118b9274/"
-            target="_blank"
-            class="home__social-icon"
-          > <i class="uil uil-linkedin-alt"></i></a></li>
+          <li class="ms-3">
+            <a
+              href="https://www.linkedin.com/in/mithun-k-j-8118b9274/"
+              target="_blank"
+              class="home__social-icon"
+            >
+              <i class="uil uil-linkedin-alt"></i
+            ></a>
+          </li>
           <!-- <li class="ms-3"><a
             href="https://dribbble.com"
             target="_blank"
@@ -951,13 +1070,15 @@
           >
             <i class="uil uil-dribbble"></i>
           </a></li> -->
-          <li class="ms-3"><a
-            href="https://github.com/Mithunkj/"
-            target="_blank"
-            class="home__social-icon"
-          >
-            <i class="uil uil-github"></i>
-          </a></li>
+          <li class="ms-3">
+            <a
+              href="https://github.com/Mithunkj/"
+              target="_blank"
+              class="home__social-icon"
+            >
+              <i class="uil uil-github"></i>
+            </a>
+          </li>
         </ul>
       </footer>
     </div>
@@ -974,5 +1095,10 @@
     ></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--AOS script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

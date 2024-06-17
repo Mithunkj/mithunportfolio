@@ -1,3 +1,21 @@
+/* ===========Nav bor ================================ */
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.boxShadow =
+      "0px 2px 15px rgba(0, 0, 0, 0.1)";
+    document.getElementById("navbar").style.padding = "10px";
+  } else {
+    document.getElementById("navbar").style.boxShadow = "none";
+    document.getElementById("navbar").style.transition = "all 0.5s";
+    document.getElementById("navbar").style.padding = "20px";
+  }
+}
+
 /* ===================Show menu========================*/
 const navMenu = document.getElementById("nav__menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -88,5 +106,3 @@ modalClose.forEach((modalClose) => {
     });
   });
 });
-
-
